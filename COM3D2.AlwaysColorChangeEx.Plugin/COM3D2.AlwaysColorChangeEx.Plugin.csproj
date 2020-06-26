@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92DD0672-D7AB-48BB-89CB-B065C472E4C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CM3D2.AlwaysColorChangeEx.Plugin</RootNamespace>
+    <AssemblyName>COM3D2.AlwaysColorChangeEx.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\COM3D2\COM3D2x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\COM3D2\COM3D2x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="ExIni">
+      <HintPath>..\..\COM3D2\COM3D2x64_Data\Managed\ExIni.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonFx.Json">
+      <HintPath>..\..\COM3D2\COM3D2x64_Data\Managed\JsonFx.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\COM3D2\COM3D2x64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityInjector">
+      <HintPath>..\..\COM3D2_my\Sybaris\UnityInjector.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCException.cs" />
+    <Compile Include="AlwaysColorChangeEx.cs" />
+    <Compile Include="ConstantValues.cs" />
+    <Compile Include="Data\ACCMaterial.cs" />
+    <Compile Include="Data\ACCMaterialEx.cs" />
+    <Compile Include="Data\ACCMenu.cs" />
+    <Compile Include="Data\ACConstants.cs" />
+    <Compile Include="Data\ACCTexture.cs" />
+    <Compile Include="Data\ACCTextureEx.cs" />
+    <Compile Include="Data\CCColor.cs" />
+    <Compile Include="Data\CCMaterial.cs" />
+    <Compile Include="Data\CCMPN.cs" />
+    <Compile Include="Data\CCMPNValue.cs" />
+    <Compile Include="Data\CCPartsColor.cs" />
+    <Compile Include="Data\CCSlot.cs" />
+    <Compile Include="Data\ColorSet.cs" />
+    <Compile Include="Data\ColorType.cs" />
+    <Compile Include="Data\FileConst.cs" />
+    <Compile Include="Data\Item.cs" />
+    <Compile Include="Data\Keyword.cs" />
+    <Compile Include="Data\MaskInfo.cs" />
+    <Compile Include="Data\MateHandler.cs" />
+    <Compile Include="Data\NodeItem.cs" />
+    <Compile Include="Data\PresetData.cs" />
+    <Compile Include="Data\PresetOperation.cs" />
+    <Compile Include="Data\PropKey.cs" />
+    <Compile Include="Data\PropType.cs" />
+    <Compile Include="Data\ReplacedInfo.cs" />
+    <Compile Include="Data\ResourceRef.cs" />
+    <Compile Include="Data\RQResolver.cs" />
+    <Compile Include="Data\ShaderProp.cs" />
+    <Compile Include="Data\ShaderPropBool.cs" />
+    <Compile Include="Data\ShaderPropColor.cs" />
+    <Compile Include="Data\ShaderPropEnum.cs" />
+    <Compile Include="Data\ShaderPropFloat.cs" />
+    <Compile Include="Data\ShaderPropTex.cs" />
+    <Compile Include="Data\ShaderPropType.cs" />
+    <Compile Include="Data\ShaderType.cs" />
+    <Compile Include="Data\SlotInfo.cs" />
+    <Compile Include="Data\SlotMaterials.cs" />
+    <Compile Include="Data\SlotState.cs" />
+    <Compile Include="Data\TargetMaterial.cs" />
+    <Compile Include="Data\TargetTexture.cs" />
+    <Compile Include="Data\TexFilter.cs" />
+    <Compile Include="Data\TextureInfo.cs" />
+    <Compile Include="Data\TexType.cs" />
+    <Compile Include="Data\ValType.cs" />
+    <Compile Include="EditTarget.cs" />
+    <Compile Include="FileBrowser.cs" />
+    <Compile Include="FileBrowserType.cs" />
+    <Compile Include="GUILayoutx.cs" />
+    <Compile Include="PresetManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Render\CustomBoneRenderer.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TexAnim\AnimItem.cs" />
+    <Compile Include="TexAnim\AnimTargetDetector.cs" />
+    <Compile Include="TexAnim\AnimTex.cs" />
+    <Compile Include="TexAnim\ParseAnimUtil.cs" />
+    <Compile Include="TexAnim\ScrollTex.cs" />
+    <Compile Include="TexAnim\SlideScaledTex.cs" />
+    <Compile Include="TexAnim\TexAnimator.cs" />
+    <Compile Include="TexAnim\TexProp.cs" />
+    <Compile Include="TextureModifier.cs" />
+    <Compile Include="UI\ACCBoneSlotView.cs" />
+    <Compile Include="UI\ACCMaterialsView.cs" />
+    <Compile Include="UI\ACCPartsColorView.cs" />
+    <Compile Include="UI\ACCSaveMenuView.cs" />
+    <Compile Include="UI\ACCTexturesView.cs" />
+    <Compile Include="UI\BaseView.cs" />
+    <Compile Include="UI\ColorPicker.cs" />
+    <Compile Include="UI\ColorPresetManager.cs" />
+    <Compile Include="UI\ComboBox.cs" />
+    <Compile Include="UI\ComboBoxBase.cs" />
+    <Compile Include="UI\ComboBoxLO.cs" />
+    <Compile Include="UI\Data\EditColor.cs" />
+    <Compile Include="UI\Data\EditIntValue.cs" />
+    <Compile Include="UI\Data\EditRange.2.cs" />
+    <Compile Include="UI\Data\EditRange.cs" />
+    <Compile Include="UI\Data\EditValue.cs" />
+    <Compile Include="UI\Data\EditValueBase.cs" />
+    <Compile Include="UI\Data\NamedEditValue.cs" />
+    <Compile Include="UI\Helper\CheckboxHelper.cs" />
+    <Compile Include="UI\Helper\GUIColorStore.cs" />
+    <Compile Include="UI\Helper\SliderHelper.cs" />
+    <Compile Include="UI\UIParams.cs" />
+    <Compile Include="Util\ClipboardCHelper.cs" />
+    <Compile Include="Util\ClipBoardHandler.cs" />
+    <Compile Include="Util\CM3D2SceneChecker.cs" />
+    <Compile Include="Util\ColorUtil.cs" />
+    <Compile Include="Util\EnumExt.cs" />
+    <Compile Include="Util\EnumUtil.cs" />
+    <Compile Include="Util\FileBaseStream.cs" />
+    <Compile Include="Util\FileUtilEx.cs" />
+    <Compile Include="Util\IntervalCounter.cs" />
+    <Compile Include="Util\Json\CustomJsonWriter.cs" />
+    <Compile Include="Util\LogUtil.cs" />
+    <Compile Include="Util\MaidChangeDetector.cs" />
+    <Compile Include="Util\MaidHelper.cs" />
+    <Compile Include="Util\MaidHolder.cs" />
+    <Compile Include="Util\MaterialUtil.cs" />
+    <Compile Include="Util\MenuFileHandler.cs" />
+    <Compile Include="Util\NumberUtil.cs" />
+    <Compile Include="Util\OutputUtil.cs" />
+    <Compile Include="Util\PrivateAccessor.cs" />
+    <Compile Include="Util\ResourceHolder.cs" />
+    <Compile Include="Util\TexUtil.cs" />
+    <Compile Include="Util\TypeUtil.cs" />
+    <Compile Include="Util\UIHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="checkoff.png" />
+    <EmbeddedResource Include="checkon.png" />
+    <EmbeddedResource Include="circle.png" />
+    <EmbeddedResource Include="copy.png" />
+    <EmbeddedResource Include="cross.png" />
+    <EmbeddedResource Include="file.png" />
+    <EmbeddedResource Include="folder.png" />
+    <EmbeddedResource Include="minus.png" />
+    <EmbeddedResource Include="paste.png" />
+    <EmbeddedResource Include="picture.png" />
+    <EmbeddedResource Include="plus.png" />
+    <EmbeddedResource Include="preset_base.png" />
+    <EmbeddedResource Include="preset_empty.png" />
+    <EmbeddedResource Include="preset_focus.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

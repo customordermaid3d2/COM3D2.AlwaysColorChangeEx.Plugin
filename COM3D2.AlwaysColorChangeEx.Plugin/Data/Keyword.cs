@@ -1,0 +1,31 @@
+﻿using System;
+
+namespace CM3D2.AlwaysColorChangeEx.Plugin.Data
+{
+	// Token: 0x0200003F RID: 63
+	public enum Keyword
+	{
+		// Token: 0x04000291 RID: 657
+		NONE,
+		// Token: 0x04000292 RID: 658
+		_SPECGLOSSMAP,
+		// Token: 0x04000293 RID: 659
+		_METALLICGLOSSMAP,
+		// Token: 0x04000294 RID: 660
+		_PARALLAXMAP,
+		// Token: 0x04000295 RID: 661
+		_DETAIL_MULX2,
+		// Token: 0x04000296 RID: 662
+		_EMISSION,
+		// Token: 0x04000297 RID: 663
+		_NORMALMAP,
+		// Token: 0x04000298 RID: 664
+		_ALPHATEST_ON,
+		// Token: 0x04000299 RID: 665
+		_ALPHABLEND_ON,
+		// Token: 0x0400029A RID: 666
+		_ALPHAPREMULTIPLY_ON,
+		// Token: 0x0400029B RID: 667
+		_SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+	}
+}
